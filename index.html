@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Веб-айтрекинг — SenseMachine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-C-Xb1CeP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ZOBq4vIE.css">
+  </head>
+  <body>
+    <!-- Первый экран -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <header class="menu">
+        <a class="menu__logo" href="#" aria-label="SenseMachine">
+          <img src="./img/logo.svg" width="104" height="22" alt="" />
+          <img src="./img/tagline.svg" width="104" height="8" alt="" />
+        </a>
+        <nav class="menu__nav">
+          <button class="menu__item">Технологии <img src="./img/chevron.svg" width="16" height="16" alt="" /></button>
+          <button class="menu__item">Решения <img src="./img/chevron.svg" width="16" height="16" alt="" /></button>
+          <button class="menu__item">Интеграция <img src="./img/chevron.svg" width="16" height="16" alt="" /></button>
+          <button class="menu__item">Сотрудничество <img src="./img/chevron.svg" width="16" height="16" alt="" /></button>
+          <a class="menu__item" href="#">Блог</a>
+        </nav>
+        <div class="menu__cta"><a class="btn" href="#">Написать нам</a></div>
+      </header>
+
+      <div class="hero__content">
+        <h1 class="h1">Веб-айтрекинг</h1>
+        <div class="hero__desc">
+          <p class="hero__pill">Замер внимания дистанционно через обычную веб-камеру –<br /> без оборудования и лаборатории</p>
+          <p class="body">
+            Веб айтрекинг фиксирует, куда и как долго человек смотрит: какие элементы притягивают внимание, а какие
+            остаются незамеченными. Результаты отображаются как тепловые карты и метрики по зонам контента.
+          </p>
+        </div>
+        <a class="btn" href="#live">Запросить демо</a>
+      </div>
+    </section>
+
+    <!-- Почему удобнее -->
+    <section class="section">
+      <div class="container why">
+        <h2 class="h2 center">Почему веб-айтрекинг удобнее для регулярных <br />и массовых замеров</h2>
+        <div class="why__row">
+          <article class="why__card why__card--blue">
+            <div>
+              <h3 class="h5">Дешевле</h3>
+              <p class="body">Не требует дорогостоящего стационарного оборудования</p>
+            </div>
+            <img src="./img/icon-cheaper.svg" width="21" height="21" alt="" />
+          </article>
+          <img class="why__link" src="./img/connector.svg" width="8" height="30" alt="" aria-hidden="true" />
+          <article class="why__card why__card--grey">
+            <div>
+              <h3 class="h5">Естественные реакции</h3>
+              <p class="body">Респондент проходит исследование в комфортных условиях</p>
+            </div>
+            <img src="./img/icon-natural.svg" width="20" height="21" alt="" />
+          </article>
+          <img class="why__link" src="./img/connector.svg" width="8" height="30" alt="" aria-hidden="true" />
+          <article class="why__card why__card--dark">
+            <div>
+              <h3 class="h5">Большая выборка</h3>
+              <p class="body">Удобно для количественных исследований онлайн</p>
+            </div>
+            <img src="./img/icon-sample.svg" width="21" height="21" alt="" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Живое демо -->
+    <section class="section" id="live">
+      <div class="container live">
+        <div class="live__text">
+          <h2 class="h2">Посмотрите, как работает <br />веб-айтрекинг вживую</h2>
+          <p class="chip">Работает через камеру смартфона или компьютера*</p>
+          <a class="btn btn--sm" href="#">Запросить демо</a>
+        </div>
+
+        <!-- Карточка-превью: по клику открывается полноэкранное демо -->
+        <button class="stage" id="stage" type="button" aria-label="Попробовать веб-айтрекинг на себе">
+          <canvas class="stage__glow" aria-hidden="true"></canvas>
+          <canvas class="stage__canvas" aria-hidden="true"></canvas>
+          <canvas class="stage__head" aria-hidden="true"></canvas>
+          <span class="stage__grid" aria-hidden="true"></span>
+          <span class="stage__cta">
+            <span class="stage__live"><i></i>Живое демо</span>
+            <span class="stage__title">Попробуйте на себе</span>
+            <span class="stage__sub">Камера найдёт ваш взгляд за 30 секунд. <br />Видео не покидает устройство.</span>
+            <span class="btn">Запустить демо</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <div id="demo-root"></div>
+  </body>
+</html>
